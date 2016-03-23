@@ -1,2 +1,2 @@
 # MaskedJS
-A tiny, optimized and powerful (my words...) library that handle masked inputs (work in progresst)
+A tiny library that handle masked inputs using pure javascript (work in progresst)
