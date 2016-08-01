@@ -81,22 +81,3 @@ var MaskedJS =  function (containerId) {
 
 	
 })(MaskedJS.prototype);
-
-// Will be removed.
-/**
- * Enumeration that have all the mask types supported by MaskedJS, with the correct class-name.
- * You can use them to set the class-names in the html fields.
-*/
-/*
-var MaskTypes = {
-	
-	DateShort: "maskedjs-date-short",
-	DateMedium: "maskedjs-date-medium",
-	DateLong: "maskedjs-date-long",
-	
-	CPF: "maskedjs-cpf",
-	CNPJ: "maskedjs-cnpj",
-	RG: "maskedjs-rg",
-	TelephoneNumber: "maskedjs-telephone-number"
-}
-*/
