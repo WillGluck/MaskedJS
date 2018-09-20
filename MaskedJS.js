@@ -34,19 +34,24 @@ var MaskedJS =  function (containerId) {
             var willBeAddedValue = String.fromCharCode(charCode)
             var pattern = element.dataset.mjspattern
             var value = element.value
-            var patternElement = pattern.charAt(value.length) 
             
             if (self.isNumber(willBeAddedValue) && element.value.length < pattern.length) {
-                if (patternElement != "#") {
+                
+                var index = value.length;
+                var patternElement = pattern.charAt(index);
+
+                while(patternElement != "#") {
                     element.value += patternElement
+                    patternElement = pattern.charAt(++index); 
                 }
+
             } else {
                 event = self.postHandler(event)
                 return false   
             }
         }
     }
-    
+        
     self.postHandler = function(event) {
         if (self.isIE()) {
             event.keyCode = 0
